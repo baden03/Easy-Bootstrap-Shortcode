@@ -4,7 +4,7 @@ Link: http://www.osCitasthemes.com
 Tags: Wordpress Shortcodes, Wordpress Bootstrap, Wordpress Bootstrap Shortcode, Bootstrap, Responsive pages, Editor plugin, Bootstrap Shortcode, TinyMCE
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 4.5.1a
+Stable tag: 4.5.2a
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: http://oscitasthemes.com/support-our-free-plugins/
@@ -147,9 +147,13 @@ It's that simple ... just what the name suggests
 
 == Changelog ==
 
-= 4.5.1 =
+= 4.5.2 =
 
 * Fixed issue with missing script (language support)
+
+= 4.5.1 =
+
+* [Update] Updated slider shortcode as per the suggestion by TheFitCoder.
 
 = 4.5.0 =
 
