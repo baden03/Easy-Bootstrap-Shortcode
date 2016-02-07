@@ -174,7 +174,6 @@ function ebs_shortcodes($shortcodes=array()){
 
     );
 
-
     return $shortcodes;
 }
 
@@ -251,7 +250,7 @@ $val=get_option('EBS_SHORTCODE_PREFIX','');
 }
 
 
-add_action( 'admin_enqueue_scripts', 'ebs_js_translation_assets' );
+//add_action( 'admin_enqueue_scripts', 'ebs_js_translation_assets' );
 function ebs_js_translation_assets($hook) {
     wp_enqueue_script( 'ebs-js-translation-scripts', plugin_dir_url( __FILE__ ) . 'scripts' );
     wp_localize_script( 'ebs-js-translation-scripts', 'ebsjstrans', array(
@@ -267,9 +266,6 @@ function ebs_js_translation_assets($hook) {
     	'accordionnumber' => __( 'Accordion Number', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
     	'bgcolor' => __( 'Background Color', 'easy-bootstrap-shortcodes' ),
     	'bg' => __( 'Background', 'easy-bootstrap-shortcodes' ),
         'badge' => __( 'Badge', 'easy-bootstrap-shortcodes' ),
@@ -282,9 +278,6 @@ function ebs_js_translation_assets($hook) {
     	'bullets' => __( 'Bullets', 'easy-bootstrap-shortcodes' ),
     	'bordered' => __( 'Bordered', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
 
         'customclass' => __( 'Custom Class', 'easy-bootstrap-shortcodes' ),
     	'color' => __( 'Color', 'easy-bootstrap-shortcodes' ),
@@ -302,10 +295,6 @@ function ebs_js_translation_assets($hook) {
     	'clear' => __( 'Clear', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
-
         'default' => __( 'Default', 'easy-bootstrap-shortcodes' ),
         'danger' => __( 'Danger', 'easy-bootstrap-shortcodes' ),
         'description' => __( 'Description', 'easy-bootstrap-shortcodes' ),
@@ -320,18 +309,10 @@ function ebs_js_translation_assets($hook) {
     	'division' => __( 'Division', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
-
         'exsmall' => __( 'Ex-small', 'easy-bootstrap-shortcodes' ),
         'enternumval' => __( 'Enter a numeric value', 'easy-bootstrap-shortcodes' ),
     	'effect' => __( 'Effect', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
-
 
         'floatright' => __( 'Float Right', 'easy-bootstrap-shortcodes' ),
         'features' => __( 'Features', 'easy-bootstrap-shortcodes' ),
@@ -344,17 +325,9 @@ function ebs_js_translation_assets($hook) {
     	'five' => __( 'Five', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
-
         'grp' => __( 'Group', 'easy-bootstrap-shortcodes' ),
         'goes' => __( 'Goes', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
-
 
         'horizontal' => __( 'Horizontal', 'easy-bootstrap-shortcodes' ),
         'heading' => __( 'Heading', 'easy-bootstrap-shortcodes' ),
@@ -362,9 +335,6 @@ function ebs_js_translation_assets($hook) {
     	'here' => __( 'Here', 'easy-bootstrap-shortcodes' ),
     	'hide' => __( 'Hide', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
 
         'insert' => __( 'Insert', 'easy-bootstrap-shortcodes' ),
         'information' => __( 'Information', 'easy-bootstrap-shortcodes' ),
@@ -375,17 +345,9 @@ function ebs_js_translation_assets($hook) {
     	'interval' => __( 'Interval', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
-
         'justified' => __( 'Justified', 'easy-bootstrap-shortcodes' ),
     	'jumbotron' => __( 'Jumbotron', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
-
 
         'large' => __( 'Large', 'easy-bootstrap-shortcodes' ),
         'link' => __( 'Link', 'easy-bootstrap-shortcodes' ),
@@ -393,10 +355,6 @@ function ebs_js_translation_assets($hook) {
         'list' => __( 'List', 'easy-bootstrap-shortcodes' ),
     	'label' => __( 'Label', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
-
 
         'makeblock' => __( 'Make block', 'easy-bootstrap-shortcodes' ),
     	'minus' => __( 'Minus', 'easy-bootstrap-shortcodes' ),
@@ -406,10 +364,6 @@ function ebs_js_translation_assets($hook) {
     	'medium' => __( 'Medium', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
-
         'newwindow' => __( 'Open in New Window', 'easy-bootstrap-shortcodes' ),
         'newtarget' => __( 'Open in new window', 'easy-bootstrap-shortcodes' ),
         'noof' => __( 'No of', 'easy-bootstrap-shortcodes' ),
@@ -418,17 +372,11 @@ function ebs_js_translation_assets($hook) {
     	'new' => __( 'New', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
-
         'option' => __( 'Option', 'easy-bootstrap-shortcodes' ),
         'on' => __( 'On', 'easy-bootstrap-shortcodes' ),
     	'offset' => __( 'Offset', 'easy-bootstrap-shortcodes' ),
     	'one' => __( 'One', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
 
         'primary' => __( 'Primary', 'easy-bootstrap-shortcodes' ),
     	'plus' => __( 'Plus', 'easy-bootstrap-shortcodes' ),
@@ -437,9 +385,6 @@ function ebs_js_translation_assets($hook) {
     	'progress' => __( 'Progress', 'easy-bootstrap-shortcodes' ),
     	'pause' => __( 'Pause', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
 
         'rel' => __( 'Rel', 'easy-bootstrap-shortcodes' ),
         'right' => __( 'Right', 'easy-bootstrap-shortcodes' ),
@@ -451,9 +396,6 @@ function ebs_js_translation_assets($hook) {
         'row' => __( 'Row', 'easy-bootstrap-shortcodes' ),
         'responsive' => __( 'Responsive', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
-
 
     	'size' => __( 'Size', 'easy-bootstrap-shortcodes' ),
     	'style' => __( 'Style', 'easy-bootstrap-shortcodes' ),
@@ -474,8 +416,6 @@ function ebs_js_translation_assets($hook) {
         'specification' => __( 'Specification', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
-
         'type' => __( 'Type', 'easy-bootstrap-shortcodes' ),
         'title' => __( 'Title', 'easy-bootstrap-shortcodes' ),
         'text' => __( 'Text', 'easy-bootstrap-shortcodes' ),
@@ -494,11 +434,8 @@ function ebs_js_translation_assets($hook) {
         'three' => __( 'Three', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
         'upload' => __( 'Upload', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
 
     	'vertical' => __( 'Vertical', 'easy-bootstrap-shortcodes' ),
     	'value' => __( 'Value', 'easy-bootstrap-shortcodes' ),
@@ -510,12 +447,9 @@ function ebs_js_translation_assets($hook) {
     	'well' => __( 'Well', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
         'xsmall' => __( 'X-small', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
         '' => __( '', 'easy-bootstrap-shortcodes' ),
-
-
 
     	'your' => __( 'Your', 'easy-bootstrap-shortcodes' ),
 
@@ -523,13 +457,11 @@ function ebs_js_translation_assets($hook) {
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
 
-
     	'enterval0to100' => __( 'Enter a numeric value between 0 to 100, Default value is 50', 'easy-bootstrap-shortcodes' ),
     	'enternumvaleg20' => __( 'Enter a numeric value Ex. 20', 'easy-bootstrap-shortcodes' ),
     	'cantchange' => __( "Can't Change, exceeds the limit", 'easy-bootstrap-shortcodes' ),
     	'youcanselect' => __( 'You can select different column style for different screens such as medium, small(e.g < 992px), x-small(e.g < 768px)', 'easy-bootstrap-shortcodes' ),
     	'' => __( '', 'easy-bootstrap-shortcodes' ),
-
 
     ));
 
