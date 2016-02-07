@@ -4,7 +4,7 @@
   Plugin Name: Easy Bootstrap Shortcode
   Plugin URI: http://www.oscitasthemes.com
   Description: Add bootstrap 3.0.3 styles to your theme by wordpress editor shortcode buttons.
-  Version: 4.5.0
+  Version: 4.5.1a
   Author: oscitas
   Author URI: http://www.oscitasthemes.com
   License: Under the GPL v2 or later
@@ -56,9 +56,7 @@ else:
         $hook = "after_plugin_row_{$folder}/{$file}";
         add_action( $hook, 'ebsp_register_licence_key');
     }
-    function ebsp_register_licence_key( $plugin_name )
-
-    {
+    function ebsp_register_licence_key( $plugin_name ){
         $ebsprefix='ebsp';
         $plugin_name='easy-bootstrap-shortcode-pro/osc_bootstrap_shortcode.php ';
         echo '</tr><tr class="plugin-update-tr"><td colspan="3" class="plugin-update"><div class="update-message">'  . __('Easy Bootstrap Shortcode Pro also available, <a href="http://oscitasthemes.com/products/easy-bootstrap-shortcodes-pro/">click here</a> to purchase one now', 'easy-bootstrap-shoercodes') . '</div></td>';
@@ -181,7 +179,7 @@ else:
             update_option( 'EBS_SESSION_CLOSE', isset($_POST['use_ebs_session_close'])
                 ?$_POST['use_ebs_session_close']:'0' );
             ebs_session_start();
-            $_SESSION['ebs_dynamic_css'] =$_POST['ebs_custom_css'];
+            $_SESSION['ebs_dynamic_css'] = $_POST['ebs_custom_css'];
             ebs_session_end();
             update_option( 'EBS_SHORTCODE_PREFIX', isset($_POST['shortcode_prefix'])?$_POST['shortcode_prefix']:'' );
 
@@ -245,7 +243,6 @@ else:
             'font_awe'=>$fa_icon,
             'ebs_prefix'=>$shortcode_prefix
         ));
-
     }
 
     /*
